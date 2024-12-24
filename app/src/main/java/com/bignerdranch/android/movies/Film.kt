@@ -4,7 +4,6 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import java.time.LocalDate
-import java.util.Date
 import java.util.UUID
 
 @Entity
