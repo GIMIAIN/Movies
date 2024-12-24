@@ -4,7 +4,6 @@ import Database.FilmDatabase
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.room.Room.databaseBuilder
-import java.util.UUID
 import java.util.concurrent.Executors
 
 
@@ -22,7 +21,6 @@ class FilmRepository private constructor(context: Context) {
 
     private val filmDao = database.filmDao()
     fun getFilms(): LiveData<List<Film>> = filmDao.getFilms()
-    fun getFilm(id: UUID): LiveData<Film?> = filmDao.getFilm(id)
 
     suspend fun delFilms() {
         filmDao.delFilms()
