@@ -10,4 +10,6 @@
     <string name="search_button">Search button</string>
     <string name="add_movie">Add movie</string>
     <string name="title_movie_genre">Movie genre</string>
+    <string name="no_movies_in_list">No movies in list</string>
+    <string name="film_list_empty">Список фильмов пуст, нажми на кнопку снизу, это не просьба</string>
 </resources>
