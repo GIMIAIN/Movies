@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
     <application
         android:name=".FilmSearchApplication"
         android:allowBackup="true"
@@ -14,10 +17,13 @@
         android:theme="@style/Theme.Movies"
         tools:targetApi="31">
         <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:label="Search result" />
+        <activity
             android:name=".AddActivity"
             android:exported="false"
-            android:label="Add movie"
-            />
+            android:label="Add movie" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

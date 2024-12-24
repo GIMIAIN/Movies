@@ -67,7 +67,7 @@ class FilmListFragment:Fragment() {
         fun bind(film: Film) {
             this.film = film
             nameTextView.text = this.film.title
-            yearTextView.text = this.film.date.year.toString()
+            yearTextView.text = this.film.year
             watchedCheck.isChecked = this.film.watched
         }
     }
