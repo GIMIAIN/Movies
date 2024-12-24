@@ -9,5 +9,6 @@ import java.util.UUID
 data class Film (@PrimaryKey val id: UUID = UUID.randomUUID(),
                  @SerializedName("Title") var title: String = "",
                  @SerializedName("Year") var year: String = "",
+                 @SerializedName("Type") var genre: String = "",
                  @SerializedName("Poster") var posterUrl: String = "",
                  var watched: Boolean = false)

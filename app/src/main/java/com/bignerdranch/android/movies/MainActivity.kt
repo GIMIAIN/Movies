@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     private var filmRepository: FilmRepository = FilmRepository.get()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
         val currentFragment =

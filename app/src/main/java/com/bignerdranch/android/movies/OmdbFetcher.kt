@@ -34,7 +34,6 @@ class OmdbFetcher {
                 response: Response<FilmResponse>
             ) {
                 Log.d(TAG, "Response received ${response.raw()}")
-                //val filmResponse: FilmResponse? = omdbResponse?.Search
                 var films: List<Film> = response.body()?.films?: mutableListOf()
                 films = films.filterNot {
                     it.posterUrl.isBlank()
